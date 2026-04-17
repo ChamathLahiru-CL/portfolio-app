@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { profile } from "../data/profile";
 import { FiGithub, FiLinkedin, FiMail, FiMapPin, FiSend, FiCheckCircle, FiAlertCircle, FiLoader } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
@@ -75,6 +76,13 @@ export default function Contact() {
       href: "https://maps.google.com/?q=Gampaha,Sri+Lanka",
       color: "#10b981",
     },
+    {
+      icon: <FaWhatsapp />,
+      label: "WhatsApp",
+      sub: profile.phone,
+      href: profile.whatsappUrl,
+      color: "#25d366",
+    },
   ];
 
   const isLoading = formState === "loading";
@@ -112,14 +120,19 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
+                  style={{ ["--brand-color" as string]: s.color } as React.CSSProperties}
                 >
-                  <div className="social-link-icon" style={{ color: s.color }}>
+                  <div
+                    className="social-link-icon"
+                    style={{
+                      color: s.color,
+                      background: `${s.color}1a`,
+                    }}
+                  >
                     {s.icon}
                   </div>
-                  <div>
-                    <div style={{ fontWeight: 600, fontSize: "0.92rem" }}>{s.label}</div>
-                    <div className="social-link-label">{s.sub}</div>
-                  </div>
+                  <div style={{ fontWeight: 700, fontSize: "0.85rem" }}>{s.label}</div>
+                  <div className="social-link-label">{s.sub}</div>
                 </a>
               ))}
             </div>

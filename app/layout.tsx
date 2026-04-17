@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lahiru Jayasuriya | Full Stack Developer & QA Engineer",
+  title: "Lahiru Jayasuriya | QA Engineer",
   description:
     "Portfolio of Lahiru Jayasuriya – BICT Undergraduate at Uva Wellassa University, Full Stack Developer and QA Engineer specializing in Selenium automation, React, and modern web technologies.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Lahiru Jayasuriya" }],
   openGraph: {
-    title: "Lahiru Jayasuriya | Full Stack Developer & QA Engi eer",
+    title: "Lahiru Jayasuriya | QA Engineer",
     description:
       "BICT Undergraduate, Full Stack Developer & QA Engineer from Gampaha, Sri Lanka.",
     images: ["https://avatars.githubusercontent.com/u/173532719?v=4"],
