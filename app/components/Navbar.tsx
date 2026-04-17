@@ -37,7 +37,11 @@ export default function Navbar() {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-inner">
           <a className="navbar-logo" href="#home">
-            LJ
+            <img
+              src="/logo.ico"
+              alt="Logo"
+              className="navbar-logo-img"
+            />
           </a>
 
           <ul className="navbar-links">
