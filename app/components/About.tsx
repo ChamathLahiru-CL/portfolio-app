@@ -56,7 +56,7 @@ export default function About() {
               />
               <div>
                 <div className="about-name">{profile.name}</div>
-                <div className="about-title-badge">Full Stack Dev & QA Engineer</div>
+                <div className="about-title-badge">Software Quality Assurance Engineer</div>
               </div>
 
               <ul className="about-info-list">
@@ -69,12 +69,12 @@ export default function About() {
                   <span>{profile.degree}</span>
                 </li>
                 <li>
-                  <FiCode className="info-icon" />
-                  <span>Full Stack Developer</span>
-                </li>
-                <li>
                   <FiShield className="info-icon" />
                   <span>Software QA Engineer</span>
+                </li>
+                <li>
+                  <FiCode className="info-icon" />
+                  <span>Full Stack Developer</span>
                 </li>
               </ul>
 
@@ -98,9 +98,9 @@ export default function About() {
             </p>
             <p className="about-description" style={{ marginTop: "-0.5rem" }}>
               I specialize in both <strong style={{ color: "var(--text-primary)" }}>building</strong> and{" "}
-              <strong style={{ color: "var(--text-primary)" }}>breaking</strong> software — crafting 
-              full-stack applications with React and Node.js while building robust Selenium/ TestNG 
-              automation frameworks that ensure every feature works perfectly. Currently learning 
+              <strong style={{ color: "var(--text-primary)" }}>breaking</strong> software — crafting
+              full-stack applications with React and Node.js while building robust Selenium/ TestNG
+              automation frameworks that ensure every feature works perfectly. Currently learning
               Playwright and CI/CD integration for QA pipelines.
             </p>
 
